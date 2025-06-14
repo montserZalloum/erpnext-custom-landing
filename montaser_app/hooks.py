@@ -27,6 +27,7 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/montaser_app/css/montaser_app.css"
 # app_include_js = "/assets/montaser_app/js/montaser_app.js"
+web_include_js = "/assets/montaser_app/js/login_redirect.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/montaser_app/css/montaser_app.css"
@@ -52,12 +53,16 @@ app_license = "mit"
 # ------------------
 # include app icons in desk
 # app_include_icons = "montaser_app/public/icons.svg"
+app_include_icons = [
+	"frappe/icons/timeless/icons.svg",
+	"frappe/icons/espresso/icons.svg",
+]
 
 # Home Pages
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+# home_page = "custom_homepage"
 
 # website user home page (by Role)
 # role_home_page = {
@@ -230,6 +235,8 @@ app_license = "mit"
 
 # Authentication and authorization
 # --------------------------------
+
+on_session_creation = "montaser_app.auth.on_login_redirect"
 
 # auth_hooks = [
 # 	"montaser_app.auth.validate"
