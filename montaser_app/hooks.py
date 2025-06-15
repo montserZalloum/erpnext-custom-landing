@@ -27,8 +27,10 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/montaser_app/css/montaser_app.css"
 # app_include_js = "/assets/montaser_app/js/montaser_app.js"
-web_include_js = "/assets/montaser_app/js/login_redirect.js"
-
+# web_include_js = "/assets/montaser_app/js/login_redirect.js"
+web_include_js = [
+    "assets/montaser_app/js/login_redirect.js"
+]
 # include js, css files in header of web template
 # web_include_css = "/assets/montaser_app/css/montaser_app.css"
 # web_include_js = "/assets/montaser_app/js/montaser_app.js"
